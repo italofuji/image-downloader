@@ -1,0 +1,45 @@
+{
+  "name": "image-downloader",
+  "version": "1.0.0",
+  "description": "CLI app that allow user to download images from given website URL",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "jest --passWithNoTests",
+    "prepare": "husky install",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/italofuji/image-downloader.git"
+  },
+  "keywords": [
+    "image",
+    "download"
+  ],
+  "author": "Italo Yoshito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/italofuji/image-downloader/issues"
+  },
+  "homepage": "https://github.com/italofuji/image-downloader#readme",
+  "dependencies": {
+    "yargs": "^17.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^16.2.1",
+    "commitlint": "^16.2.3",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.7"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
