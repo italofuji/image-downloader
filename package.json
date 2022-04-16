@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "CLI app that allow user to download images from given website URL",
   "main": "src/index.js",
+  "type": "module",
+  "engines": { "node" : "17.8.0" },
   "scripts": {
     "start": "node ./src/index.js",
     "test": "jest --passWithNoTests",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/italofuji/image-downloader#readme",
   "dependencies": {
+    "puppeteer": "^13.5.2",
     "yargs": "^17.4.0"
   },
   "devDependencies": {
