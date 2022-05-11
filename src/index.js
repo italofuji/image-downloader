@@ -18,6 +18,10 @@ const { url, outputPath } = params.argv
 console.log('url: ', url)
 console.log('outputPath: ', outputPath)
 
+if (!fs.existsSync(outputPath)) {
+  fs.mkdirSync(outputPath)
+}
+
 ;(async () => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
